@@ -8,8 +8,6 @@
   font-family: cursive, sans-serif;
   color: #FFFFFF;
   background-color: #779cab;
-  /* background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png"); opacity: .75; */
-  
 }
 
 #button {
@@ -43,4 +41,8 @@
 
 #above-tweet {
   text-align: center;
+}
+
+.negative {
+  color: red; 
 }
