@@ -11,11 +11,6 @@ $(document).ready(function() {
       .parent()
       .find(".counter")
       .val(countdown)
-
   });
   
 })
-
-
-//$(document).on('input', 'input:text', function() {});  WILL THIS WORK?
-
