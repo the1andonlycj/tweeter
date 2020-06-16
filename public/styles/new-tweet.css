@@ -1,0 +1,46 @@
+.new-tweet {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: cursive, sans-serif;
+  color: #FFFFFF;
+  background-color: #779cab;
+  /* background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png"); opacity: .75; */
+  
+}
+
+#button {
+  background-color: #ffb3b3;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Bungee', cursive, sans-serif;
+  font-size: 16px;
+}
+
+#tweet-text {
+  display: flex;
+  width: 100%;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+
+.form-extras {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+#above-tweet {
+  text-align: center;
+}

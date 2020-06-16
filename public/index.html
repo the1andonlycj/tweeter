@@ -3,12 +3,25 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
-
+    
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
 
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
+    
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+
+    <!--Nav CSS -->
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+
+    <!-- NewTweet CSS -->
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+
+
+    <!-- Header CSS -->
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -20,10 +33,38 @@
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
+      <span>easer</span>
     </nav>
 
+    <header>
+      <div>
+          <img src="/images/profile-hex.png"> 
+      </div>
+      <br>
+      <div>
+          <h2>A Rose By Any Other</h2>
+      </div>
+  </header>
+  
+  <!-- Sample text: <p>How far away culture astonishment rich in heavy atoms extraplanetary billions upon billions. Permanence of the stars paroxysm of global death invent the universe shores of the cosmic ocean finite but unbounded courage of our questions? Dream of the mind's eye hundreds of thousands Tunguska event two ghostly white figures in coveralls and helmets are softly dancing a still more glorious dawn awaits encyclopaedia galactica. A still more glorious dawn awaits two ghostly white figures in coveralls and helmets are softly dancing courage of our questions the carbon in our apple pies the carbon in our apple pies the sky calls to us and billions upon billions upon billions upon billions upon billions upon billions upon billions.</p> -->
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main class="container">
+      <section class="new-tweet">
+        <h2>Project Good Vibes</h2>
+        <form action="/tweets" method="post">
+          <label for="tweet-text" id="above-tweet">What has brought you peace?</label>
+          <textarea name="text" placeholder="Tell the world about it." id="tweet-text"></textarea>
+          <div class="form-extras">
+            <button id="button" type="submit">Express</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+          <footer>
+            <h3>Chiller words have ne'er been spoken:</h3>
+            <div class="posted-tweet">
+            </footer>
+          </div>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
