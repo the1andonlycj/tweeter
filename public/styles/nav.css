@@ -1,8 +1,11 @@
 nav {
   font-family: 'Bungee', cursive, sans-serif;
+  position: fixed;
+  z-index: 100;
+  top: 0;
   height: 120px;
   width: 100vmax;
-  background-color: #627C85;
+  background-color: #ffb3b3;
   color: #FFFFFF;
   padding-left: 1.5em;
   padding-right: 1.5em;
