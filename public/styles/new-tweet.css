@@ -57,7 +57,8 @@
 
 .posted-tweet {
   display: flex;
-  width: 80%;
+  flex-direction: column;
+  max-width: 80%;
   border-style: solid;
   border-width: 3px;
   border-left-width: 5px;
@@ -65,7 +66,9 @@
   border-color: rgb(113, 113, 161);
   padding: 10px;
   color: #555555;
-  background-color: #ebf0f1
+  background-color: #ebf0f1;
+  margin-bottom: 10px;
+  word-wrap: break-word;
 }
 
 .posted-tweet:hover {
@@ -90,6 +93,7 @@
 }
 
 hr {
+  width: 90%;
   border: 6px solid #ffb3b3;
   border-radius: 5px;
 }
@@ -104,4 +108,9 @@ hr {
 
 .posted-tweet:hover .username {
   color: #b3b3b3
+}
+
+#tweet-container {
+  /* styling for the container of new tweets */
+
 }
