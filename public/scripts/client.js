@@ -1,31 +1,3 @@
-//Testing tweets:
-const tweetData1 = [
-  {
-    "user": {
-      "name": "Newton",
-      "avatars": "https://i.imgur.com/73hZDYK.png"
-      ,
-      "handle": "@SirIsaac"
-    },
-    "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
-    },
-    "created_at": 1461116232227
-  },
-  {
-    "user": {
-      "name": "Descartes",
-      "avatars": "https://i.imgur.com/nlhLi3I.png",
-      "handle": "@rd"
-    },
-    "content": {
-      "text": "Je pense , donc je suis"
-    },
-    "created_at": 1461113959088
-  }
-];
-
-
 //Function for creating the new tweet elements array:
 const createTweetElement = function (tweetData) {
   // let tweetsArr = [];
@@ -70,9 +42,45 @@ const createTweetElement = function (tweetData) {
       $("#tweet-container").append(createTweetElement(tweet))
     }
   }
+
+
   
-  //Jquery declaration:
-  $(document).ready(function () {
-    console.log("Client.js is ready!");
-    renderTweets(tweetData1)
+//Jquery declaration:
+$(document).ready(function () {
+  console.log("Client.js is ready!");
+  //Defining function for loading the tweets/GETting tweets from server:
+  const loadTweets = function () {
+    console.log("hey");
+    $.ajax({
+    url: '/tweets', 
+    method: 'GET',
+    dataType: 'JSON',
+    // success: function(res) {
+    //   renderTweets(res);
+    // }
+    }).then(function (res) {
+      renderTweets(res);
+    });
+  };
+
+  loadTweets(); //This one is running
+  $("form").on("submit", function (event) {
+    event.preventDefault();
+    let formLength = $(this).find("textarea").val().length;
+    if (formLength <= 0) {
+      alert("As deep as silence can be, it doesn't really work here.")
+    } else if (formLength > 140) {
+      alert("Brevity is the soul of chill--lose a few characters, if you can.")
+    } else {
+      $.ajax({
+        url: '/tweets',
+        method: 'POST',
+        dataType: 'JSON',
+        data: $(this).serialize()
+      }).then(function(res) { //this is where things break down.
+        console.log(res);
+        loadTweets();
+      })
+    }
   });
+});
