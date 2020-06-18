@@ -21,7 +21,6 @@ nav {
 body {
   padding-top: 80px;
   color: #545149;
-  background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -31,6 +30,7 @@ body {
 */
 main {
   display: flex; 
+  flex-direction: row;
   width: 100%;
   background-color: #f4f1ec;
 }
@@ -38,4 +38,32 @@ main {
 
 .container {
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    /* small screen header stuff goes here */
+  }
+
+  body {
+    display: flex; 
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  header {
+    /* big screen header stuff goes here */
+  }
+
+  body {
+    display: flex; 
+    flex-direction: row;
+    background-color: #779cab;
+    background-image: url(https://www.transparenttextures.com/patterns/45-degree-fabric-light.png);
+  }
+
+  .new-tweet {
+   
+  }
 }
