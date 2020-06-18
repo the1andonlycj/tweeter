@@ -1,14 +1,13 @@
 .new-tweet {
   display: flex;
   width: 100%;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-family: cursive, sans-serif;
   color: #FFFFFF;
   background-color: #627c85;
-  padding-bottom: 20px;
+  padding-bottom: 10em;
 }
 
 
@@ -26,7 +25,7 @@
 
 #tweet-text {
   display: flex;
-  width: 100%;
+  width: 97%;
   padding-left: 5px;
   padding-top: 5px;
   padding-right: 5px;
@@ -37,15 +36,26 @@
   resize: none;
 }
 
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 .form-extras {
   margin-top: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
+  width: 97%;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 #above-tweet {
+  margin-bottom: 0.5em;
   text-align: center;
 }
 
@@ -58,7 +68,7 @@
 .posted-tweet {
   display: flex;
   flex-direction: column;
-  max-width: 80%;
+  width: 90%;
   border-style: solid;
   border-width: 3px;
   border-left-width: 5px;
@@ -102,17 +112,26 @@ hr {
   padding-right: 5px;
 }
 
+
+.name {
+  font-size: 2vw;
+}
+
 .username {
-  color: #ebf0f1;
+  display: none;
 }
 
 .posted-tweet:hover .username {
+  display: block;
+  font-size: 2vw;
   color: #b3b3b3
 }
 
 #tweet-container {
-  /* styling for the container that holds the new tweets */
-
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 #error-message-empty {
@@ -136,3 +155,21 @@ hr {
   margin-top: 10px;
   display: none;
 }
+
+/* Screen resizing => Fonts in tweets resizing */
+
+@media only screen and (max-width: 768px) {
+  .name {
+  font-size: 3vw;
+  }
+  .posted-tweet:hover .username {
+  font-size: 3vw;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .name {
+    font-size: 2vw;
+  }
+}
+

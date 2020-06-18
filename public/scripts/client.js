@@ -1,3 +1,5 @@
+// const moment = require("moment")
+
 //Function for creating the new tweet elements array:
 const createTweetElement = function (tweetData) {
   let $tweet = `
