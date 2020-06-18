@@ -111,6 +111,28 @@ hr {
 }
 
 #tweet-container {
-  /* styling for the container of new tweets */
+  /* styling for the container that holds the new tweets */
 
+}
+
+#error-message-empty {
+  background: #c51244;
+  padding: 10px;
+  border-radius: 0;
+  position: relative; 
+  display: inline-block;
+  box-shadow: 1px 1px 1px #aaaaaa;
+  margin-top: 10px;
+  display: none;
+  
+}
+#error-message-long {
+  background: #c51244;
+  padding: 10px;
+  border-radius: 0;
+  position: relative; 
+  display: inline-block;
+  box-shadow: 1px 1px 1px #aaaaaa;
+  margin-top: 10px;
+  display: none;
 }
