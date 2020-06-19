@@ -10,6 +10,11 @@
   padding-bottom: 10em;
 }
 
+#form-footer {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
 .tweet-text {
   word-break: break-word;
 }
