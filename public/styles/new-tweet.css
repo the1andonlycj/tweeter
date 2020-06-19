@@ -34,6 +34,7 @@
   border-bottom: 6px solid #ffb3b3;
   border-radius: 5px;
   resize: none;
+  height: 4em;
 }
 
 form {
@@ -62,8 +63,6 @@ form {
 .negative {
   color: red; 
 }
-
-
 
 .posted-tweet {
   display: flex;
@@ -112,13 +111,18 @@ hr {
   padding-right: 5px;
 }
 
-
 .name {
   font-size: 2vw;
+  margin-left: 0.25em
 }
 
 .username {
   display: none;
+}
+
+.top-left-tweet {
+  display: flex;
+  flex-direction: row;
 }
 
 .posted-tweet:hover .username {
