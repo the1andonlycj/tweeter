@@ -1,8 +1,6 @@
-# Tweeter Project
+# Easer Project
 
-Tweeter is a simple, single-page Twitter clone.
-
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
+Easer is a simple, single-page Twitter clone for chill people who are over the Twitter vitriol.
 
 ## Getting Started
 
@@ -15,3 +13,14 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+- Body-parser": 1.15.x or above
+- Chance: 1.0.2 or above
+- Express: 4.13.4 or above
+- Md5: 2.1.0 or above
+- Moment: 2.26.0 or above
+
+## Final Product
+!["Screenshot of 'tweet' page"]()
+!["Screenshot of posted 'tweet'"]()
+!["Screenshot of adaptive display"]()
+!["Screenshot of error message"]()
