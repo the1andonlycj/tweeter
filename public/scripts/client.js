@@ -82,6 +82,7 @@ $(document).ready(function () {
         data: $(this).serialize()
       }).then(() => {
         $(this).find("textarea").val('')
+        $(this).find(".counter").text("140");
         loadTweets();
       })
     }
