@@ -16,7 +16,7 @@ const createTweetElement = function (tweetData) {
       </div>
     </div>
       <div class ="tweet-body">
-        <p> ${escape(tweetData.content.text)}</p>
+        <p class ="tweet-text"> ${escape(tweetData.content.text)}</p>
       </div>
     <hr>
     <div class="tweet-footer">
